@@ -1,6 +1,8 @@
 pipeline{
     agent any
-    environment{def jsonPackager = readJSON file: "package.json" }
+    environment{
+        def jsonPackager = readJSON file: "package.json" 
+    }
     
     stages{
        
