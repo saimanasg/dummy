@@ -10,7 +10,7 @@ pipeline{
        
         stage('Print Environment variables'){
             steps{
-                echo "${janme}" 
+                echo "${jname}" 
                 echo "${jversion}"
         }
         
