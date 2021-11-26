@@ -8,8 +8,8 @@ pipeline{
        
         stage('Print Environment variables'){
             steps{
-                echo "${jasonPackager.version}" 
-                echo "${jasonPackager.name}"
+                echo "${jsonPackager.version}" 
+                echo "${jsonPackager.name}"
         }
         
       
