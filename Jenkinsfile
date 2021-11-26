@@ -1,17 +1,18 @@
 pipeline{
     agent any
     environment{
-        def jsonPackager = readJSON file: "package.json" 
-        def jname="${jsonPackager.name}"
-        def jversion="${jsonPackager.version}"
+        
+       // def jname="${jsonPackager.name}"
+        //def jversion="${jsonPackager.version}"
     }
     
     stages{
        
         stage('Print Environment variables'){
             steps{
-                echo "${jname}" 
-                echo "${jversion}"
+                def jsonPackager = readJSON file: "package.json" 
+                echo "${jsonPackager.name}" 
+                echo "${jsonPackager.version}"
         }
         
       
