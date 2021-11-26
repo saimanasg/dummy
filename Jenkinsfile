@@ -10,9 +10,11 @@ pipeline{
        
         stage('Print Environment variables'){
             steps{
+                script{
                 def jsonPackager = readJSON file: "package.json" 
                 echo "${jsonPackager.name}" 
                 echo "${jsonPackager.version}"
+                }
         }
         
       
