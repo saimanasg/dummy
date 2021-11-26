@@ -1,10 +1,10 @@
 pipeline{
     agent any
-    environment{
+    //environment{
         
        // def jname="${jsonPackager.name}"
         //def jversion="${jsonPackager.version}"
-    }
+   // }
     
     stages{
        
